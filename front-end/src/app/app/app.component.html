@@ -17,8 +17,13 @@
   <div *ngFor="let piece of fragenSet">
     <app-question [question]="piece"></app-question>
   </div>
-  <button class="btn btn-primary">Fertig</button>
+  <button (click)="onReadyBtn()" class="btn btn-primary">Fertig</button>
 </div>
 
-
-
+<div class="mt-4 col-md-12">
+  <div class="form-group">
+    <label for="file">  Choose File  </label>
+    <input type="file" id="file" (change)="handleFileInput($event.target.files)">
+  </div>
+</div>
+<ngx-spinner></ngx-spinner>
