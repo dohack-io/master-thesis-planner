@@ -1,0 +1,42 @@
+
+<div class="col-md-12 Absolute-Center is-Responsive">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <p class="card-text">{{question.question}}</p>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text check-space">
+            <input type="checkbox" [disabled]="choosen" (click)="checkRadio(1)" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        {{question.option1.title}}
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text check-space">
+            <input type="checkbox" [disabled]="choosen" (click)="checkRadio(2)" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        {{question.option2.title}}
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text check-space">
+            <input type="checkbox" [disabled]="choosen" (click)="checkRadio(3)" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        {{question.option3.title}}
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text check-space">
+            <input type="checkbox" [disabled]="choosen" (click)="checkRadio(4)" aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        {{question.option4.title}}
+      </div>
+    </div>
+  </div>
+</div>
+
